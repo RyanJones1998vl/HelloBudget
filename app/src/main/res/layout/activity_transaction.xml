@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/milk">
+
+    <include layout="@layout/toolbar"
+        />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/transaction_bar_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        android:background="@color/colorPrimary"
+        >
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_toolbar"
+            android:background="@color/white">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/transaction_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/margin_5"
+
+                app:tabTextAppearance="@style/tablayout_text"
+                android:background="@color/white"
+                app:tabSelectedTextColor="@color/green"
+
+                />
+        </HorizontalScrollView>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/transaction_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/milk">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        android:layout_marginTop="@dimen/height_toolbar_minus"
+        android:orientation="horizontal"
+        >
+
+
+        <Button
+            android:id="@+id/transaction_fab"
+            android:layout_width="@dimen/xxlarge_icon"
+            android:layout_height="@dimen/xxlarge_icon"
+            android:layout_gravity="center"
+            tools:ignore="MissingConstraints"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@drawable/round_button"
+            android:text="+"
+            android:textSize="@dimen/xlarge_text"
+            android:textColor="@color/milk"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

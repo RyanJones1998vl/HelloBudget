@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/length_line"
+    android:layout_height="@dimen/length_line"
+    android:layout_gravity="center"
+    android:gravity="center">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+        <!--        android:background="@color/red"-->
+
+        <ProgressBar
+            android:id="@+id/_wallet_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/margin_7"
+            android:paddingLeft="@dimen/margin_4"
+            android:paddingRight="@dimen/margin_4"
+            android:paddingBottom="@dimen/margin_4">
+            <!--            android:background="@color/sky_blue"-->
+
+            <com.example.myapplication.utils.WalletPicker.WalletPickerPalette
+                android:id="@+id/wallet_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"/>
+        </ScrollView>
+
+    </FrameLayout>
+<!--    <FrameLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="28dp">-->
+<!--        <ProgressBar-->
+<!--            android:id="@+id/_wallet_progress_bar"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"/>-->
+<!--        <ScrollView-->
+<!--            android:layout_width="200px"-->
+<!--            android:layout_height="200px">-->
+<!--            <com.example.myapplication.utils.WalletPicker.WalletPickerPalette-->
+<!--                android:id="@+id/wallet_picker"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:visibility="gone"/>-->
+<!--        </ScrollView>-->
+
+<!--    </FrameLayout>-->
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/actionbar_progress_indicator" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="enterAlways"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:showIn="@layout/transaction_form"
+        >
+        <LinearLayout
+            android:id="@+id/toolbar_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/toolbar_return_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/question_mark"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/toolbar_form_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Create"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/toolbar_mainscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:paddingVertical="@dimen/margin_2h"
+            >
+            <ImageView
+                android:id="@+id/toolbar_wallet_icon"
+                android:layout_width="@dimen/xlarge_icon"
+                android:layout_height="@dimen/xlarge_icon"
+                android:src="@mipmap/music"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/margin_2h">
+                <TextView
+                    android:id="@+id/toolbar_wallet_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/small_text"
+                    android:text="Name"/>
+                <TextView
+                    android:id="@+id/toolbar_wallet_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normal_text"
+                    android:text="Balance"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:id="@+id/toolbar_view_icon"
+                android:layout_width="@dimen/large_icon"
+                android:layout_height="@dimen/large_icon"
+                android:src="@drawable/ic_home_dark"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_4"/>
+            <ImageView
+                android:id="@+id/toolbar_time_icon"
+                android:layout_width="@dimen/large_icon"
+                android:layout_height="@dimen/large_icon"
+                android:src="@drawable/ic_dashboard_black_24dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+</FrameLayout>

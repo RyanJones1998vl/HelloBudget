@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="transaction_category_name">
+        <item>Food</item>
+        <item>Bills</item>
+        <item>Transportation</item>
+        <item>Shopping</item>
+    </string-array>
+    <integer-array name="transaction_category_image">
+        <item>@drawable/abc_vector_test</item>
+        <item>@drawable/abc_vector_test</item>
+        <item>@drawable/abc_vector_test</item>
+        <item>@drawable/abc_vector_test</item>
+    </integer-array>
+</resources>

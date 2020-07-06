@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/timerange_day"
+        android:title="By day"
+        android:orderInCategory="1"/>
+    <item android:id="@+id/timerange_month"
+        android:title="By month"
+        android:orderInCategory="2"/>
+    <item android:id="@+id/timerange_quarter"
+        android:title="By quarter"
+        android:orderInCategory="3"/>
+    <item android:id="@+id/timerange_year"
+        android:title="By year"
+        android:orderInCategory="4"/>
+</menu>

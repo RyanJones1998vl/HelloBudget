@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView android:id="@+id/category_picker_swatch_icon"
+            android:layout_width="@dimen/xlarge_icon"
+            android:layout_height="@dimen/xlarge_icon"
+            android:layout_marginRight="@dimen/margin_4"
+            android:layout_marginTop="@dimen/margin_4"
+            android:src="@drawable/abc_vector_test"/>
+        <TextView
+            android:id="@+id/category_picker_swatch_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_text"
+            android:text="category"
+            android:layout_marginTop="@dimen/margin_2"
+            android:layout_gravity="center"
+            android:textColor="@color/gray"
+            />
+    </LinearLayout>
+
+</merge>
